@@ -1,0 +1,88 @@
+package com.xworkz.test.Types.variables;
+
+public class ToothPaste {
+
+	public String flavor="Clove";
+	public String ageRange="Adults";
+	public String itemForm="Paste";
+	public String materialFeature="Natural";
+	public String itemWeight="200 grams";
+	public String productBenefits="Cavity Protection";
+	public int itemPackageQuantity=1;
+	public String targetAudience="Unisex Adult";
+	public String length="8.3 Centimeters";          
+	public String height="1.1 Centimeters";
+	public String width="1.8 Centimeters";
+	public boolean willItProtectCavity=true;
+	public boolean willItReliveFromDentalPain=true;
+	public String mainComponent="Eugenol in Clove";
+	public String noAddedSets=" Fluoride and Parabens";
+	public String pasteColor="wood color";
+	public String experience="136 years";
+	public String ingredients="Clove";
+	public boolean isItVegitarian=true; 
+	public boolean willItGivesStrongTeeth=true;
+	public boolean willItGivehealthyTeeth=true; 
+	public boolean  isItPainReliving=true;
+	public String  countryOrigin="India";
+	public String netQuantity="200 grams";
+	public String itemModelNumber="FR220200";
+	public String genericName="toothPaste";
+	public String paymentType="Cash";
+	public String ShoppingType="Offline";
+	public String ProductType="Vegitarian and Natural";
+	public String brandName="Dabur"; 
+    public int price=77;
+    public int startedIn=1884  ;
+    public String startedBy=" Dr SK Burman";
+    public String boxshape="Square";
+    public String companyLocatedIn="Kolkata";
+    public boolean hasDescription=true;
+	public float pH=7.15f;
+    public boolean isWhitenTheTooth=true;
+	public boolean isUsedForJewelleryCleaning=true;
+	public boolean isUsedForSilverChainCleaning=true;
+    public String medicineType="Ayurvedic";
+    public String CEOOfDaburCompnay="Mohit Malhotra";
+    public String companyName="Dabur India limited";
+    public boolean isUsedByChildren=false;
+    public String whatIsTheSymbolOfDabur="Banyan Tree";
+    public String banyanTreeBroadTrunkRepresents="Stability";
+    public String  banyanTreeMultipleBranchesRepresents="Growth";
+    public String madeIn="India";
+    public String founder="Dr SK Burman";
+    public String ManufacturedBy="Dabur India Limited";
+    public String experiyDate="1.4 year";
+	public boolean hasALogo=true;
+	public String website="www.dabur.com";
+    public String properties="Antiseptic";
+	public boolean isGovernmentCompany=false;
+    public String boxColour="White,Greean and Orange";
+    public String  capColour="White";
+    public String capShape="Round";
+	public String capDesign="Round with Stripes";
+	public boolean itContainSalt=true;
+	public String manufacturer="Dabur India limited";
+	public boolean isSensitiveRelief=true;
+	public boolean isUsedByAdults=true;
+	public String packingType="Tubes";	
+	public boolean hasHerbalExtracts=true;
+	public String toothpasteCapOpenType="Thread circular type";
+	public boolean hasDiffirentsize=true;
+	public boolean hasDiffirentprice=true;	
+	public boolean isDifferentInTaste=true;
+	public boolean daburIsOwnedByUS=false;
+	public boolean hasDifferentInIngrediants=true;
+	public boolean hasDiffirentcolor=true;
+	public boolean hasDifferentInBoxColor=true;
+	public float ratings=4.1f;
+	public boolean hasEmployees=true;
+	public boolean isEffectiveOralCare=true;
+	public String incomePerMonth=" 2,516 Crore ";
+	public boolean isAvailableInOnline=true;
+	public boolean isOnlinePaymentAvailable=true;
+	public boolean isGoodForTeeth=true;
+	
+
+
+}
