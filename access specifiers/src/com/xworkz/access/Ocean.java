@@ -2,8 +2,12 @@ package com.xworkz.access;
 
 public class Ocean {
 
+		String Name; 
 		int depth;
-		Ocean ocean=new Ocean();
+		
+		Ocean(){
+			System.out.println("Ocean");
+		}
 
 
 }
