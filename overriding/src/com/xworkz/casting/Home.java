@@ -2,7 +2,7 @@ package com.xworkz.casting;
 
 public class Home {
 
-	//public  void runHandwash(Handwash handwash,Sanitizer sanitizer,Soap soap,Lux lux) {
+	
 		public void runHandwash(Handwash handwash) {
 			
 		System.out.println(handwash.aroma);
