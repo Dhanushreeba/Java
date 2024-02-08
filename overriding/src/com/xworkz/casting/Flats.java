@@ -4,7 +4,7 @@ public class Flats extends Footware {
 
 	public int price=2000;
 	
-	public void Fixation() {
+	public void fixation() {
 		System.out.println("running fixation in flats");
 	}
 }

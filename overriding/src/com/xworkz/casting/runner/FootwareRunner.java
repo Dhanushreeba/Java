@@ -10,16 +10,19 @@ public class FootwareRunner {
 	public static void main(String[] args) {
 		
 		Heels heels=new Heels();
+		
 		Footware footware=new Footware();
 		heels.Footware(footware);
 		
 		
 		Shoe shoe=new Shoe();
-		heels.Shoe(shoe);
+		heels.Footware(shoe);
 		
 		
 		Flats flats=new Flats();
-		heels.Flats(flats);
+		heels.Footware(flats);
+		
+		
 
 	}
 

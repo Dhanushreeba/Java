@@ -4,7 +4,7 @@ public class Shoe extends Footware {
 
 	public String brand="Nike";
 	
-	public void Comfortable() {
+	public void comfortable() {
 		
 		System.out.println("running comfotable in shoe");
 	}
