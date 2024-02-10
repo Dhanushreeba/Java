@@ -1,0 +1,235 @@
+1.   Java is invented by james Gosling in 1995, initialy it is named as Oak
+     Later oak is renamed as java bye Oracle.
+     Java was originally developed by James Gosling . 
+     It was released in May 1995 as a core component of Sun Microsystems.
+     java is an object oriented programming language.
+     java is an high level language.
+
+     Javac-->javac is is used in command prompt to compile the program.
+	     c-->means compilation/compiler.
+		 using javac the code in java file is converted into class file .
+		 compiler executes line by line.
+
+
+2.	JDK-->java development kit
+	JRE-->java runtime Environment
+	JVM-->java virtual machine.
+     
+
+3.  .java file-->java file is written by the coder or a programmer .initially all the java programs are saved as filename.java 
+		in .java file all programs are in high level language.
+		This .java file is understrands by the programer.
+
+    .class file-->in the compilation time the java code or .java file are converted into .class file 
+		  while converting the the high level language is converted into machine level langauge the it will compile the code.
+		  this .class file is also called as byte code .
+		  because of this java is called as platform independence.
+
+4.	Eclipse
+	intelije
+	notepad
+	notepad++
+	
+
+5.	Variable which holds the value.variables is also called as object.
+	the object is assigned by some values 
+
+	Variables has 4 types
+	1)Static variable--->Static variable the variable is static .if it is static then the value can not be changed.
+			     this is static variable it is used in methods ,constructors,class.
+			     Ex:--public static int num=10;
+ 
+	2)Local variable--->The local variable is declared only inside the method block.it can not be instatiated outside the class.
+		        ex:--		 public class Ball{
+				public void throw(){
+			     Ball ball=new Ball 
+				}
+			    }
+
+	3)instance variable--->The local variable is declared inside the method block and also inisde the class .it can not be instatiated outside the class or inside the class also.
+				ex:-- public class Ball{
+					Ball ball=new Ball 
+				public void throw(){
+			     Ball ball=new Ball 
+				}
+			    }
+
+	4)parameter variable-->the parameter variable is declared inside the method braces()only there we can pass the parameters only 
+				ex:-- public class Ball{ 
+				public void throw(Ball ball){
+			     Ball ball=new Ball 
+				}
+			    }
+	 	  
+     	
+7. run time error.
+
+
+8.	Data types which stores the value.
+	It has 2 types 
+	1)Primitive data types--->the primitive data types are int,char,float,double,byte,short,boolean,long
+				ex-->  int num=10;
+				       char gender='f';--->enclosed within single cots only an always it has 1 character
+				       float cgpa=6.7f;
+				       double temp=43.8d;
+				       byte num=12;
+				       short bones=106;
+				       boolean name=true;
+				       long phoneNumber=8475457034l;
+
+	2)non-primitive data types.-->non primitive data types are arrays,String 
+					ex-->int[]array={1,2,3,4,5,6};
+					     String weight="45 kg";-->enclosed with double cots only and it has both number and charecters.
+
+9.	Dot operatare is act has connection or simply it is used as a connection between variables methods class constructors.
+		ex--> public class Ball{ 
+				String type="lethear";
+				public void throw(){
+			     
+				}
+			public static void main(String[] args){
+				Ball ball=new Ball 
+				system.out.println(ball.type)
+
+			    }
+	 	  	
+10.	Features of java
+      1)Simple ----->Java is easy to learn,and its Syntax is simple,clean and easy to undertsand.
+
+      2)Secure-->Java is best known for its Security.Java is Secured because:-No explicit pointer,Java language provides these securities by default.
+
+      3)Robust-->Robust means Strong.java is robust because:-*It uses strong memory managment.*Java provides automatic garbage 		    	collection which runs on the JVM to get rid of objects which are not being used by a java application anymore.
+
+      4)Platform independent->Java is a platform independent because it is different from other languages.Which are compiled into 				  	  platform specific machines while java is a write once,run anywhere language.Java code can be 				  		  		executed on multiple platforms for example,Windows,Linux etc.
+
+      5)Oops-->Java is an object oriented prgming language.Everything in java is an object.Object oriented means we organize our 		   	   software as a combination of different types of objects that incorporate both data and behaviour.
+
+      6)Architecture neutral-->Java is arcitecture neutral because there are no implementation dependent features,example,the size 				  of primitive types is fixed.
+
+      7)Portable-->Java is portable because it facilitates you to carry the java bytecode to any platform.It doesn't require any 		     implementation.
+
+      8)Compiled and interpreter-->Java uses both compiler and interpreter.Java source code is converted into bytecode at 				     compilation time.The interpreter executes this bytecode at runtime and produces output interpreted that is why it is platform-independent.
+
+      9)Distributed-->Java is distributed because it facilitates users to create distributed applications in java.This feature of 				java makes us able to access files by calling methods from any machine on the internet.
+
+
+
+
+11.	Array is an Homogeneous collection of values.Array which contains values .which is always declared using [] braces .if we want store the 	multiple data inside the data base we use array
+	array starts from 0th index.the values are called as index.it is fixed in size.arrays length is upto n-1.the values is initialized inside{} 		braces
+
+	ex--> int[] numbers={23,56,72,97,40,98,95,1,3,6};
+	
+12.Class is a class. which is used in all the program to write and execute a code.class name is always start with Capiyle letter.
+			public class Test{
+			
+			public static void main(String[] args){
+	}
+		} 	
+
+	Object is used as reference name.and an object is super class for all the class.it has java.lang
+	object means variable,class,method,constructors.
+	public class Test{
+		public String type="Notepad";
+	
+			public static void main(String[] args){
+			Test test=new Test();--->test is reference name or an object
+			System.out.println(test.type);-->using this object we can call the variable,method,class,construtor
+	}
+		} 
+
+13.Keywords are used in the time of declaring or intialization.
+ 				       int num=10;
+				       char gender='f';
+				       float cgpa=6.7f;
+				       double temp=43.8d;
+				       byte num=12;
+				       short bones=106;
+				       boolean name=true;
+				       long phoneNumber=8475457034l;
+				       public
+				       class
+				       Static
+				       void
+		public class Test{
+			
+			public static void main(String[] args){
+				}
+			} 	
+
+14.Constructor
+		It is a special method and it is  a block of code it will execute whenever an object is created. 
+  		  To initialize the object or instance variablewe use constructor.Constructors are used to initialize the objects of the 				class with initial values.it is invoked automatically when the objects are created.Constructors can have default parameters		
+
+  
+   		Types Of Constructor
+   
+ 		1)default--->default constructors is defaultly taken by the JVM in the compilation time.
+ 		2)No parameter--->in this we do not pass the parameter inside the method braces.
+ 		3)parameter---> in this we do pass the parameter inside the method braces.
+
+		public class Test{
+			
+			Test(){
+}
+			Public void Test(){
+}
+			public void Test(Test test){
+}
+			
+			} 	
+
+    Constructor Rules
+*Constructor name  should be the same as the class name.
+*There is no explicit return type.
+
+15.main method static because while we are about execute the code the jvm look first for static method. if satic method is present then it will execute the static method code.if we remove static method it shows an error.
+
+
+16.public class Test{
+	int[] num={12,3,2,45,6,7,6};
+}
+public static void main(String[] args){
+
+	for(i=0;i>num.length;i++){
+	int[i]=num.length;
+	System.out.println(int[i])
+}
+}
+}
+
+17.Method Overloading-->Having the same name but different in parameters.
+
+       it has 3 ways
+   1)Changing type of parameter
+   2)Changing order of parameter
+   3)Changing Number of parameter
+
+ex-->public void Test(int num,char value,float val)
+     public void Task(float value,double no,float val)
+     public void Arr(char value,int num)
+
+Method Overriding-having a same name but having diff parameter.Method overriding is possible in inheritance here sub class containes all the properties of super class.then all the properties present in super class is override in parent class.
+
+
+public class Animal{
+	String type;
+	String color;
+public void eat(){
+ }
+}
+
+public class Tiger extends Aniaml{
+	int age;
+	@Override
+	String type;
+	String color;
+
+public void makesSound(){
+
+@Override
+public void eat(){
+ }
+}
+}
+		
