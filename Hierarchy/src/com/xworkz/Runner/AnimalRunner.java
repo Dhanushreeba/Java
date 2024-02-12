@@ -1,7 +1,7 @@
 package com.xworkz.Runner;
 
 import com.xworkz.heirarchy.Animal;
-import com.xworkz.heirarchy;
+import com.xworkz.heirarchy.Object;
 import com.xworkz.heirarchy.Bear;
 import com.xworkz.heirarchy.Cat;
 import com.xworkz.heirarchy.Cheetah;
