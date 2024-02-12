@@ -1,6 +1,6 @@
 package com.xworkz.heirarchy;
 
-public class Animal extends Object {
+public class Animal {
  
 	public String name;
 	

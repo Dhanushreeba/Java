@@ -2,19 +2,6 @@ package com.xworkz.heirarchy;
 
 public class Squirrel {
 	
-//	public void work(Object object)throws Throwable{
-//		object.clone();
-//		object.finalize();
-//		object.getClass();
-//		object.hashCode();
-//		object.notify();
-//		object.notifyAll();
-//		object.toString();
-//		object.wait();
-//		object.wait(0);
-//		object.wait(0, 0);
-//		object.equals(object);
-//	}
 	
 	public void run(java.lang.Object object) {
 		if(object instanceof Animal)
