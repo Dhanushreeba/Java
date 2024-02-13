@@ -21,6 +21,7 @@ public class Paint {
 	@Override
 	public String toString() {
 		System.out.println("running in Paint");
-		return "Color: "+color+  "Brand: "+brand+  "Type: "+type;
+		System.out.println("Color: "+color+  "Brand: "+brand+  "Type: "+type);
+		return super.toString();
 	}
 }

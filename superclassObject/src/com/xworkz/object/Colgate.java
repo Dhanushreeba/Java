@@ -9,6 +9,7 @@ public class Colgate {
 	
 	public String toString() {
 		System.out.println("running in Colgate");
-		return "Taste: "+taste+  "Price: "+price+  "Color: "+color;
+		System.out.println("Taste: "+taste+  "Price: "+price+  "Color: "+color);
+		return super.toString();
 	}
 }

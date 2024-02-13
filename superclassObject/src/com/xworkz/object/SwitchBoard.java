@@ -11,7 +11,8 @@ public class SwitchBoard {
 	@Override
 	public String toString() {
 		System.out.println("running in Switchboard");
-		return "Brand: "+brand+  "Type: "+type+  "NoOfSockets: "+noOfSockets;
+		System.out.println("Brand: "+brand+  "Type: "+type+  "NoOfSockets: "+noOfSockets);
+		return super.toString(); 
 
 	}
 

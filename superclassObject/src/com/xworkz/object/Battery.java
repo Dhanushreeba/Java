@@ -10,6 +10,7 @@ public class Battery {
 	@Override
 	public String toString() {
 		System.out.println("running in Battery");
-		return "Type: "+type+  "Color: "+color+  "Brand: "+brand;
+		System.out.println("Type: "+type+  "Color: "+color+  "Brand: "+brand);
+		return super.toString();
 	}
 }

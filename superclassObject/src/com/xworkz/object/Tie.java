@@ -21,6 +21,7 @@ public class Tie {
 	@Override
 	public String toString() {
 		System.out.println("running in Tie");
-		return "Color: "+color+  "Pattern: "+pattern+  "Price: "+price;
+		System.out.println("Color: "+color+  "Pattern: "+pattern+  "Price: "+price);
+		return super.toString();
 	}
 }

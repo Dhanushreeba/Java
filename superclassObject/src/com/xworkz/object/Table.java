@@ -11,6 +11,7 @@ public class Table {
 	@Override
 	public String toString() {
 		System.out.println("running in Table");
-		return "Type: "+type+  "Color: "+color+  "Price: "+price;
+		System.out.println("Type: "+type+  "Color: "+color+  "Price: "+price);
+		return super.toString(); 
 	}
 }

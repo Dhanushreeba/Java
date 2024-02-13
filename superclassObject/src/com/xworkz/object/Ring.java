@@ -13,8 +13,8 @@ public class Ring {
 	public String toString() {
 		
 		System.out.println("running in ring");
-		return "Price: "+price+" Type:" +type+" Color:" +color;
-		//return super.toString();
+		System.out.println( "Price: "+price+" Type:" +type+" Color:" +color);
+		return super.toString();
 	}
 	
 	
