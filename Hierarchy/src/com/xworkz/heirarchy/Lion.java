@@ -1,12 +1,10 @@
 package com.xworkz.heirarchy;
 
 public class Lion extends Animal{
+
+	public String foodType="Flesh";
 	
-	public String foodType;
-	
-	public void eat() {
-		
-		System.out.println("running eat in Lion");
+		public void makeSound() {
+		System.out.println("running makeSound in Lion");
 	}
-	
 }
