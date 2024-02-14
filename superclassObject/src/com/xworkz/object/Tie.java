@@ -6,22 +6,11 @@ public class Tie {
 	public String pattern="Plane";
 	public String price="100 Rs";
 	
-	public void fix() {
-		System.out.println("fixes");
-	}
-	
-	public void outlook() {
-		System.out.println("gives good outlook");
-	}
-	
-	public void style() {
-		System.out.println("used to style");
-	}
 	
 	@Override
 	public String toString() {
 		System.out.println("running in Tie");
-		System.out.println("Color: "+color+  "Pattern: "+pattern+  "Price: "+price);
-		return super.toString();
+		//System.out.println("Color: "+color+  "Pattern: "+pattern+  "Price: "+price);
+		return "Color: "+color+  "Pattern: "+pattern+  "Price: "+price;
 	}
 }
