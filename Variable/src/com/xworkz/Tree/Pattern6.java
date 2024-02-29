@@ -12,9 +12,10 @@ public class Pattern6 {
 			for(int k=1;k<=i;k++) {
 				System.out.print("*");
 			}
-			for (int l = 1; l <i; l++) {
+			for (int l=1; l<i ; l++) {
 				System.out.print("*");
-			}	
+			}
+			
 			System.out.println();
 		}
 	}
