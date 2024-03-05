@@ -1,4 +1,4 @@
-package com.xworkz.Tree;
+package com.xworkz.PatternProgram;
 
 public class Pattern {
 
@@ -12,5 +12,4 @@ public class Pattern {
 			System.out.println();
 		}
 	}
-
 }

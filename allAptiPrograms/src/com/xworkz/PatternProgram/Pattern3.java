@@ -1,7 +1,7 @@
-package com.xworkz.Tree;
+package com.xworkz.PatternProgram;
 
-public class Pattern5 {
-
+public class Pattern3 {
+	
 	public static void main(String[] args) {
 
 		int n=5;
