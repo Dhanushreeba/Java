@@ -6,8 +6,8 @@ public class SchoolRunner {
 
 	public static void main(String[] args) {
 
-		School s=new School();
-		teaching();
+		//School s=new School();
+		//teaching();
 		
 	}
 

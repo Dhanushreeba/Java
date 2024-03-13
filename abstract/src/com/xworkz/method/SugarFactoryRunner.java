@@ -6,7 +6,7 @@ public class SugarFactoryRunner {
 	
 	public static void main(String[] args) {
 		
-		SugarFactory f=new SugarFactory();
+		//SugarFactory f=new SugarFactory();
 
 	}
 
