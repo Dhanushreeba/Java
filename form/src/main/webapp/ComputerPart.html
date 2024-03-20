@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+  
+<body>
+<div style="width: 200px;">
+</div>
+
+<div>
+<nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+  <div class="container-fluid">
+    <div class="container">
+
+<a class="navbar-brand" href="index.html"><button type="button" class="btn btn-light">Home</button></a>
+<a class="navbar-brand" href="ComputerPart.html"><button type="button" class="btn btn-light">Computer</button></a>
+<a class="navbar-brand" href="index.html"><button type="button" class="btn btn-light">Back</button></a>
+</div>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+    </div>
+  </div>
+</nav>
+</div>
+
+<h2 class="text-md-center w-50;">Computer Parts</h2>
+<!--<div class="text-md-center" >--->
+
+<form  class=" container  mt-xxl-5  h-50 w-50" action="parts" method="post">
+<div  class="mb-3">
+<label for="color" class="form-label">Brand Name</label>
+       <select class="form-select custom-select-width" id="color" name="brand" aria-label="Select Color">
+  <option selected>select brand</option>
+  <option value="hp">hp</option>
+  <option value="Dell">Dell</option>
+  <option value="Lenovo">Lenovo</option>
+  <option value="Asus">Asus</option> 
+ </select><br>
+ </div>
+ 
+ <div class=" mb-3 ">
+            <label for="model" class="form-label  ">Model</label>
+            <input type="text" class="form-control  " id="model" name="model">
+        </div>  
+  
+  <div class="mb-3">
+       <label for="color" class="form-label">Color</label>
+         <select class="form-select custom-select-width" id="color" name="color" aria-label="Select Color">
+                <option selected>Select color</option>
+                <option value="1">Black</option>
+                <option value="2">White</option>
+                <option value="3">Silver</option>
+                <option value="4">Blue</option>
+            </select>
+        </div>
+
+<div class="mb-3">
+<label for="color" class="form-label">Type</label>
+            <select class="form-select custom-select-width" id="color" name="type" aria-label="Select Color">
+  <option selected>Select Type</option>
+  <option value="Super">Super Computer</option>
+  <option value="MainframeComputer">Mainframe Computer</option>
+  <option value="Digital">Digital Computer</option>
+  <option value="Personal">Personal Computer</option>
+  </div>
+ </select><br>
+ 
+ <div class="mb-3">
+ 
+<label for="color" class="form-label">RAM</label>
+            <select class="form-select custom-select-width" id="color" name="ram" aria-label="Select Color">
+  <option selected>Select RAM</option>
+  <option value="8Gb">8Gb</option>
+  <option value="16Gb">16Gb</option>
+   <option value="32Gb">32Gb</option>
+  <option value="64Gb">64Gb</option>
+  </div>
+  </select><br>
+ 
+ 
+ <div class="mb-3">
+ <label for="color" class="form-label">Hard Disk</label>
+            <select class="form-select custom-select-width" id="color" name="harddisk" aria-label="Select Color">
+  <option selected>Select Hard disk</option>
+  <option value="SSD">64GB SSD</option>
+  <option value="SSD">128GB SSD</option>
+  <option value="eMMC">256GB eMMC</option>
+  <option value="SSD">512GB SSD</option>
+  
+  </select>
+  </div>
+ 
+ <div class="mb-3">
+ <label for="color" class="form-label">Processor</label>
+            <select class="form-select custom-select-width" id="color" name="processor" aria-label="Select Color">
+
+    <option selected>Select Processor</option>
+  <option value="i3">i3</option>
+  <option value="i5">i5</option>
+  <option value="i7">i7</option>
+  
+  </select>
+  </div>
+
+  <div class="mb-3">
+ <label for="color" class="form-label">Generation</label>
+            <select class="form-select custom-select-width" id="color" name="generation" aria-label="Select Color">
+  <option selected>select Generation</option>
+  <option value="5th Gen">5th Gen</option>
+  <option value="7th Gen">7th Gen</option>
+   <option value="6th Gen">6th Gen</option>
+  <option value="12th Gen">12th Gen</option>
+  </select>
+  </div>
+  
+ <div class="mb-3">
+ <label for="color" class="form-label">Mother Board</label>
+            <select class="form-select custom-select-width" id="color" name="motherboard" aria-label="Select Color">
+  <option selected>select Motherboard</option>
+  <option value="micro ATX motherboard">micro ATX motherboard</option>
+  <option value="extended ATX motherboard">extended ATX motherboard</option>
+   <option value="standard ATX motherboard">standard ATX motherboard</option>
+  <option value="mini ATX motherboard">mini ATX motherboard</option>
+  <option value="Mini ITX">Mini ITX</option>
+  </select>
+  </div>
+
+ <div class="mb-3">
+ <label for="color" class="form-label">Cache Size</label>
+            <select class="form-select custom-select-width" id="color" name="cachesize" aria-label="Select Color">
+  <option selected>select</option>
+  <option value="1TB">1TB</option>
+  <option value="2TB">2TB</option>
+  <option value="4TB</">4TB</</option>
+   <option value="8TB">8TB</option>
+  
+  </select>
+  </div> 
+ 
+ <div class=" mb-3 ">
+            <label for="model" class="form-label  ">Cost</label>
+            <input type="text" class="form-control  " id="model" name="cost">
+        </div>  
+  
+  
+  
+  <div class=" mb-3 ">
+            <label for="model" class="form-label  ">Quantity</label>
+            <input type="text" class="form-control  " id="model" name="quantity">
+        </div>  
+  
+  
+  <br><div ="mb-3 form-label">
+  
+  <input type="submit" name="click"/> 
+  </div>    
+ </form>
+</body>
+</html>
