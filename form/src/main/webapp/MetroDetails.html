@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+<script>
+function metro(){
+	console.log("Metro Details..is running in JavaScript.....")
+
+	
+	var employeeId=document.getElementById("employeeId").value;
+	console.log(employeeId)
+	console.log(employeeId.value)
+	
+	let submitButton = document.getElementById("press")
+	submitButton.disabled = true;
+	 
+	if(employeeId.length != 5)
+	{
+		console.log("Please Enter Employee  ID")
+		var employeeIdError=document.getElementById("employeeIdError")
+		employeeIdError.innerHTML="Please Enter Employee ID"
+		employeeIdError.style.color='red'
+		submitButton.disabled=true
+			
+	}
+	
+	var metroLines=document.getElementById("metroLines")
+	console.log(metroLines)
+	console.log(metroLines.value)
+	
+	
+	if(metroLines.value=='')
+	{
+		console.log("Please Select metroLines")
+		var metroLinesError=document.getElementById("metroLinesError")
+		metroLinesError.innerHTML="Please Select metroLines"
+		metroLinesError.style.color='red'
+			submitButton.disabled=true
+	}
+	
+	var platformNumber=document.getElementById("platformNumber")
+	console.log(platformNumber)
+	console.log(platformNumber.value)
+
+	if(platformNumber.value=='')
+	{
+		console.log("Please select platformNumber")
+		var platformNumberError=document.getElementById("platformNumberError")
+		platformNumberError.innerHTML="Please Enter platformNumber"
+		platformNumberError.style.color='red'
+			submitButton.disabled=true
+	}
+	
+	var metroVoltage=document.getElementById("metroVoltage")
+	console.log(metroVoltage)
+	console.log(metroVoltage.value)
+	
+	if(metroVoltage.length < 3)
+	{
+		console.log("Please Enter metroVoltage")
+		var metroVoltageError=document.getElementById("metroVoltageError")
+		metroVoltageError.innerHTML="Please Enter metroVoltageError"
+		metroVoltageError.style.color='red'
+		submitButton.disabled=true
+	}
+	
+	/* var maleRadio = document.getElementById("male");
+	var femaleRadio = document.getElementById("female");
+
+	if (!maleRadio.checked && !femaleRadio.checked) {
+	    // Neither male nor female is selected
+	    console.log("Please select a gender");
+	    var genderError = document.getElementById("genderError");
+	    genderError.innerHTML = "Please select a gender";
+	    genderError.style.color = 'red';
+	} */
+	
+	/* var maleRadio = document.getElementById("male");
+	var femaleRadio = document.getElementById("female");
+	console.log(maleRadio)
+	console.log(femaleRadio) */
+		/* console.log(maleRadio.value) */
+	/* console.log(femaleRadio.value) */
+	
+			console.log(document.register.gender)
+		   console.log(document.register.gender[0])
+		   console.log(document.register.gender[1])
+		   
+		   console.log(document.register.gender[0].checked)
+		   console.log(document.register.gender[1].checked)
+	
+		   if(document.register.gender[0].checked==false && 
+		   document.register.gender[1].checked==false)
+		    {
+		      console.log("please select gendertype ")
+		     var gendererror=document.getElementById("genderError")
+		     
+		     gendererror.innerHTML="please select gendertype"
+		    	 gendererror.style.color='red'
+		    }
+
+	
+	/* var radio=document.getElementById("radio")
+	console.log(radio)
+	
+	if(!radio.checked){
+		console.log("Please select")
+		var radioError=document.getElementById("radioError")
+		radioError.innerHTML="Please select"
+		radioError.style.color='red'
+		submitButton.disabled=true
+
+	}  */
+	
+	var checkbox=document.getElementById("checkbox")
+	
+	if(!checkbox.checked){
+		console.log("Please select")
+		var checkboxError=document.getElementById("checkboxError")
+		checkboxError.innerHTML="Please Select"
+		checkboxError.style.color='red'
+			submitButton.disabled=true
+	
+	}
+	else{	
+	
+	 submitButton.disabled=false;
+}
+	
+}
+</script>
+</head>
+
+
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+  <div class="container-fluid">
+
+<a class="navbar-brand" href="index.html"><button type="button" class="btn btn-light">Home</button></a>
+<a class="navbar-brand" href="index.html"><button type="button" class="btn btn-light">Back</button></a>
+
+
+</div>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbarNav">
+    </div>
+</nav>
+
+
+<div class="container">
+
+<h2 class="text-md-center w-50;">Metro Details Form</h2>
+
+
+<form  class=" container  mt-xxl-5  h-50 w-50" action="metro" method="post"  name="register">
+
+ <div class=" mb-3 ">
+            <label for="employeeId" class="form-label  ">Employee Id: </label>
+            <input type="text" class="form-control  " id="employeeId" name="employeeId1">
+            <span id="employeeIdError"></span>
+        </div>  
+        
+        <div  class="mb-3">
+<label for="metroLines" class="form-label">Metro Lines</label>
+       <select class="form-select custom-select-width" id="metroLines" name="metroLines1" aria-label="Select Color">
+  <option selected value="">---select Metro Lines---</option>
+   <option value="Green">Green</option>
+  <option value="Purpel">Purpel</option>
+  <option value="Yellow">Yellow</option>
+ </select>
+ <span id="metroLinesError"></span><br>
+ </div>
+ 
+ <div class="mb-3">
+       <label for="platformNumber" class="form-label">Platform Number</label>
+         <select class="form-select custom-select-width" id="platformNumber" name="platformNumber1" aria-label="Select Color">
+                <option selected value="">---Select your platformNumber ---</option>
+                <option value="1">1</option>
+                <option value="2">3</option>
+                <option value="3">4</option>
+                <option value="4">6</option>
+            </select>
+            <span id="platformNumberError"></span>
+        </div>
+        
+       <div class="mb-3">
+       <label for="metroVoltage" class="form-label">Metro Voltage</label>
+       <input type="text" class="form-control  " id="metroVoltage" name="metroVoltage1">
+            <span id="metroVoltageError"></span>
+        </div> 
+        
+        <div>
+        <label for="radio">Gender<br>
+        <input type="radio" value="male" name="gender" id="radio"/>Male
+        <input type="radio" value="female" name="gender" id="radio"/>Female
+        <br>
+        <span id="genderError"></span>
+        </label>
+        </div><br>
+        
+        
+        <div>
+             <label for="Select Checkbox">Metro Station </label><br>
+            <input type="checkbox" id="checkbox"/> Kengeri
+            <span id="checkboxError"></span>
+         </div> 
+    
+        
+        <div class ="mb-3 form-label">
+  <input type="submit" id="press" onclick="metro()" name="click"/>
+  </div>    
+       
+</div>
+
+</body>
+</html>

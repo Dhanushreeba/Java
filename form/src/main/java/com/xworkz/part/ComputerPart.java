@@ -63,7 +63,6 @@ public class ComputerPart extends HttpServlet{
 					+ "<div class=\"container-fluid\">"
 					+ "<div class=\"container\">"
 					+ "<a class=\"navbar-brand\" href=\"index.html\"><button type=\"button\" class=\"btn btn-light\">Home</button></a>"
-					+ "<a class=\"navbar-brand\" href=\"index.html\"><button type=\"button\" class=\"btn btn-light\">Computer</button></a>\r\n"
 					+ "<a class=\"navbar-brand\" href=\"ComputerPart.html\"><button type=\"button\" class=\"btn btn-light\">Back</button></a>\r\n"
 					+ "</div>\r\n"
 					+ "<button class=\"navbar-toggler\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbarNav\" aria-controls=\"navbarNav\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\r\n"

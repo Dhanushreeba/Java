@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet(urlPatterns = "/parts", loadOnStartup = 1)
+@WebServlet(urlPatterns = "/parts1", loadOnStartup = 1)
 public class TvReacharge extends HttpServlet{
 
 		
@@ -21,18 +21,17 @@ public class TvReacharge extends HttpServlet{
 			
 			@Override
 			protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-				System.out.println("service running in Computer part Servlet");
-				String customerId=req.getParameter("customerId");
-				String vendor=req.getParameter("vendor");
-				String amount=req.getParameter("amount");
-				String type=req.getParameter("type");
-		
-				
-				resp.setContentType("text/plain");
-				System.out.println(customerId);
-				System.out.println(vendor);
-				System.out.println(amount);
-				System.out.println(type);
+				System.out.println("service running in Tv Reacharge Servlet");
+				String customerId=req.getParameter("customerId1");
+				String vendor=req.getParameter("vendor1");
+				String amount=req.getParameter("amount1");
+				String type=req.getParameter("type1");
+					
+				resp.setContentType("text/html");
+				System.out.println("CustomerId: "+customerId);
+				System.out.println("Vendor: "+vendor);
+				System.out.println("Amount: "+amount);
+				System.out.println("Type: "+type);
 				
 				PrintWriter writer = resp.getWriter();
 				writer.write("<html>");
@@ -42,9 +41,7 @@ public class TvReacharge extends HttpServlet{
 						+ "<div class=\"container-fluid\">"
 						+ "<div class=\"container\">"
 						+ "<a class=\"navbar-brand\" href=\"index.html\"><button type=\"button\" class=\"btn btn-light\">Home</button></a>"
-						+ "<a class=\"navbar-brand\" href=\"index.html\"><button type=\"button\" class=\"btn btn-light\">Computer</button></a>\r\n"
-						+ "<a class=\"navbar-brand\" href=\"TvReacharge.html\"><button type=\"button\" class=\"btn btn-light\">TvReacharge</button></a>"
-						+ "<a class=\"navbar-brand\" href=\"ComputerPart.html\"><button type=\"button\" class=\"btn btn-light\">Back</button></a>\r\n"
+						+ "<a class=\"navbar-brand\" href=\"TvReacharge.html\"><button type=\"button\" class=\"btn btn-light\">Back</button></a>"
 						+ "</div>\r\n"
 						+ "<button class=\"navbar-toggler\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbarNav\" aria-controls=\"navbarNav\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\r\n"
 						+ "<span class=\"navbar-toggler-icon\"></span>\r\n"
@@ -55,8 +52,14 @@ public class TvReacharge extends HttpServlet{
 						+ "</nav>");
 				writer.write("</head>");
 				writer.write("</html>");
+				writer.write("<b>Tv Reacharge Service in line......<b><br>");
 				
-				writer.write("Tv Reacharge Service in line......");
+				writer.print("<b>--Details--</b><br>");
+				writer.print("<b>CustomerId:</b>"+customerId+"<br>");
+				writer.print("<b>Vendor:</b>"+vendor+"<br>");
+				writer.print("<b>Amount:</b>"+amount+"<br>");
+				writer.print("<b>Type:</b>"+type+"<br>");
+	
 
 
 			}

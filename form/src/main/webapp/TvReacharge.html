@@ -5,84 +5,165 @@
 <title>Insert title here</title>
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script >
+function tvReacharge(){
+	console.log("Tv Reacharge..is running in JavaScript.....")
+
+
+	var customerId=document.getElementById("customerId").value;
+	console.log(customerId)
+	console.log(customerId.value)
+	
+	let submitButton = document.getElementById("press")
+	submitButton.disabled = true; 
+	if(customerId.length != 8)
+	{
+		console.log("Please Enter Customer  ID")
+		var nameError=document.getElementById("nameError")
+		nameError.innerHTML="Please Enter Customer ID"
+		nameError.style.color='red'
+			submitButton.disabled=true
+		//return
+	}
+	var vendor=document.getElementById("vendor")
+	console.log(vendor)
+	console.log(vendor.value)
+
+	if(vendor.value=='')
+	{
+		console.log("Please Select Vendor")
+		var vendorError=document.getElementById("vendorError")
+		vendorError.innerHTML="Please Select Vendor"
+		vendorError.style.color='red'
+			submitButton.disabled=true
+	}
+	var amount=document.getElementById("amount")
+	console.log(amount)
+	console.log(amount.value)
+	if(amount.value==" " && amount.value<10 && amount.value>10000)
+	{
+		console.log("Please Enter TvReacharge Amount")
+		var amountError=document.getElementById("amountError")
+		amountError.innerHTML="Please Enter TvReacharge Amount"
+		amountError.style.color='red'
+			submitButton.disabled=true
+	}
+	var type=document.getElementById("type")
+	console.log(type)
+	console.log(type.value)
+	if(type.value=="")
+	{
+		console.log("Please Enter TvReacharge type")
+		var typeError=document.getElementById("typeError")
+		typeError.innerHTML="Please Enter TvReacharge Type"
+		typeError.style.color='red'
+			submitButton.disabled=true
+	}
+	var checkbox=document.getElementById("checkbox")
+	if(!checkbox.checked){
+		console.log("Please Accept")
+		var checkboxError=document.getElementById("checkboxError")
+		checkboxError.innerHTML="Please Accept"
+		checkboxError.style.color='red'
+			submitButton.disabled=true
+	
+	}
+	else{	
+	
+	 submitButton.disabled=false;
+}
+}
+</script>
 </head>
 
-<div style="width: 200px;">
-</div>
 
-<div>
+
+<body>
+
 <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
   <div class="container-fluid">
 
+<!-- <a class="navbar-brand" href="index.html"><button type="button" class="btn btn-light">Home</button></a>
+<a class="navbar-brand" href="TvReacharge.html"><button type="button" class="btn btn-light">Back</button></a> -->
+
 <a class="navbar-brand" href="index.html"><button type="button" class="btn btn-light">Home</button></a>
 <a class="navbar-brand" href="index.html"><button type="button" class="btn btn-light">Back</button></a>
+
 </div>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
+    
     <div class="collapse navbar-collapse" id="navbarNav">
     </div>
-  </div>
 </nav>
-</div>
 
-<body>
+
+
 <div class="container">
 
 <h2 class="text-md-center w-50;">Tv Cable Reacharge</h2>
-<form  class=" container  mt-xxl-5  h-50 w-50" action="parts" method="post">
+<form  class=" container  mt-xxl-5  h-50 w-50" action="parts1" method="post">
 
  <div class=" mb-3 ">
-            <label for="model" class="form-label  ">Customer Id:</label>
-			<input type="text" hidden if(customerId.length==8){
-			input type="text" class="valid customerId" else{
-			intput type="text" class="Please enter valid customerId">
-            <input type="text" class="form-control  " id="model" name="model">
+            <label for="customerId" class="form-label  ">Customer Id:</label>
+            <input type="text" class="form-control  " id="customerId" name="customerId1">
+            <span id="nameError"></span>
         </div>  
         
         <div  class="mb-3">
-<label for="color" class="form-label">Select Vendor</label>
-       <select class="form-select custom-select-width" id="color" name="brand" aria-label="Select Color">
-  <option selected>select vendor</option>
-  <option value="Sony">Sony</option>
-  <option value="Airtel">Airtel</option>
+<label for="vendor" class="form-label">Select Vendor</label>
+       <select class="form-select custom-select-width" id="vendor" name="vendor1" aria-label="Select Color">
+  <option selected value="">---select vendor---</option>
+   <option value="Airtel">Airtel</option>
   <option value="Dish Tv">Dish Tv</option>
+  <option value="Sony">Sony</option>
   <option value="Sun direct">Sun direct</option> 
- </select><br>
+ </select>
+ <span id="vendorError"></span><br>
+ 
  </div>
  
  <div class="mb-3">
-       <label for="color" class="form-label">Recharge Amount</label>
-         <select class="form-select custom-select-width" id="color" name="color" aria-label="Select Color">
-                <option selected>Select amount</option>
-                <option value="1">2000</option>
-                <option value="2">1500</option>
-                <option value="3">299</option>
-                <option value="4">456</option>
+       <label for="amount" class="form-label">Recharge Amount</label>
+         <select class="form-select custom-select-width" id="amount" name="amount1" aria-label="Select Color">
+                <option selected value="">---Select amount---</option>
+                <option value="1">299</option>
+                <option value="2">456</option>
+                <option value="3">1500</option>
+                <option value="4">2000</option>
             </select>
+            <span id="amountError"></span>
         </div>
         
        <div class="mb-3">
-       <label for="color" class="form-label">Recharge Type</label>
-         <select class="form-select custom-select-width" id="color" name="color" aria-label="Select Color">
-                <option selected>Select type</option>
+       <label for="type" class="form-label">Recharge Type</label>
+         <select class="form-select custom-select-width" id="type" name="type1" aria-label="Select Color">
+                <option selected value="">---Select type---</option>
                 <option value="Monthly">Monthly</option>
-                <option value="Topup">Topup</option>
                 <option value="OTT">OTT</option>
+                <option value="Topup">Topup</option>
                 <option value="Yearly">Yearly</option>
             </select>
+            <span id="typeError"></span>
         </div> 
         
-        <div class="mb-3 form-check">
-        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+       <!--  <div class="mb-3 form-check">
+        <input type="checkbox" value="" class="form-check-input" id="check">
         <label class="form-check-label" for="exampleCheck1">Accept</label><br>
-        </div>
+        <span id="accept"></span> 
+        </div> -->
         
-        <div ="mb-3 form-label">
-  <input type="submit" name="click"/> 
+        <label for="Select Checkbox">
+            <input type="checkbox" id="checkbox"/> Accept
+            <span id="checkboxError"></span>
+        </label>
+        
+        <div class ="mb-3 form-label">
+  <input type="submit" id="press" onclick="tvReacharge()" name="click"/>
   </div>    
-        
+       
 </div>
 
 </body>
-</html>
+</html> 
