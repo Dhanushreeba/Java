@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script>
+
+let fieldsChecks = {
+	    "name" : false,
+	    "date" : false,
+	    "email" : false,
+	    "diseases" : false,
+	    "hospitalNames" : false,
+	    "gender" :false,
+	    "cmf":false,
+	    
+	}
+	
+	
+	
+function validateAndEnableSubmit()
+{
+let flag=false;
+
+for(let[key,value] of Object.entries(fieldsChecks)) 
+	{
+	if(value === false){
+        flag = true;
+        break;
+    }
+	}
+
+if(!flag){
+    document.getElementById("submit").removeAttribute("disabled");
+}else{
+    document.getElementById("submit").setAttribute("disabled","");
+}
+}
+
+function nameValidation() 
+{
+
+	let element = document.getElementById("name");
+    let error = document.getElementById("errorname");
+
+    if(element.value.trim().length >= 3){
+        error.innerHTML = "";
+        fieldsChecks["name"] = true;
+    }else{
+        error.innerHTML = "Invalid  name.  name should be greterthan 3 letters";
+        error.style.color="red"
+        fieldsChecks["name"] = false;
+
+    }
+    validateAndEnableSubmit();
+}
+
+function  dateofbirthValidation() 
+
+{
+
+	let element = document.getElementById("date");
+    let error = document.getElementById("errordate");
+
+    if(element.value.length != '0')
+    {
+        error.innerHTML = "";
+        fieldsChecks["date"] = true;
+    }else
+    {
+        error.innerHTML = "Please enter date of birth";
+        error.style.color="red"
+        fieldsChecks["date"] = false;
+
+    }
+    validateAndEnableSubmit();	
+}
+
+function emailValidation()
+
+{
+
+	let element = document.getElementById("email");
+    let error = document.getElementById("erroremail");
+
+    if(element.value.trim().length >= 2)
+    {
+        error.innerHTML = "";
+        fieldsChecks["email"] = true;
+    }else
+    {
+        error.innerHTML = "Invalid email. emailshould be greterthan 2 letters";
+        error.style.color="red"
+        fieldsChecks["email"] = false;
+
+    }
+    validateAndEnableSubmit();
+	}
+
+
+	function  diseasesValidation()
+{
+		let element = document.getElementById("diseases");
+	    let error = document.getElementById("diseasesError");
+
+	    if(element.value.length != "0")
+	    {
+	        error.innerHTML = "";
+	        fieldsChecks["diseases"] = true;
+	    }else
+	    {
+	        error.innerHTML = "Please select diseases";
+	        error.style.color="red"
+	        fieldsChecks["diseases"] = false;
+
+	    }
+	    validateAndEnableSubmit();
+	}
+
+	 function hospitalNamesValidation()
+	 {
+		 let element = document.getElementById("hospitalNames");
+		    let error = document.getElementById("hospitalNamesError");
+
+		    if(element.value.length != '0')
+		    {
+		        error.innerHTML = "";
+		        fieldsChecks["hospitalNames"] = true;
+		    }else
+		    {
+		        error.innerHTML = "Please select hospital Names";
+		        error.style.color="red"
+		        fieldsChecks["hospitalNames"] = false;
+
+		    }
+		    validateAndEnableSubmit();
+	}
+	
+		  function genderValidation() {
+		    let genders = document.getElementsByName("gender");
+		    let error = document.getElementById("errorgender");
+
+		    let selected = false;
+		    for (let i = 0; i < genders.length; i++) {
+		        if (genders[i].checked) {
+		            selected = true;
+		            break;
+		        }
+		    }
+
+		    if (selected) {
+		        error.innerHTML = "";
+		        fieldsChecks["gender"] = true;
+		    } else {
+		        error.innerHTML = "Please select  gender";
+		        error.style.color = "red";
+		        fieldsChecks["gender"] = false;
+		    }
+		    validateAndEnableSubmit();
+		}   
+			  
+	
+	  function confirmValidation()
+	{
+		 let element = document.getElementById("cmf");
+		    let error = document.getElementById("errorconfirmed");
+
+		    if(element.checked)
+		    {
+		        error.innerHTML = "";
+		        fieldsChecks["cmf"] = true;
+		    }else
+		    {
+		        error.innerHTML = "Please confirm";
+		        error.style.color="red"
+		        fieldsChecks["cmf"] = false;
+
+		    }
+		    
+		    validateAndEnableSubmit();
+		    genderValidation()
+		    
+         } 
+     	
+
+</script>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+  <div class="container-fluid">
+
+<a class="navbar-brand" href="index.html"><button type="button" class="btn btn-light">Home</button></a>
+<a class="navbar-brand" href="index.html"><button type="button" class="btn btn-light">Back</button></a>
+
+
+</div>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbarNav">
+    </div>
+</nav>
+
+<div class="container">
+
+<h2 class="text-md-center w-50;">Patient Form</h2>
+
+
+<form  class=" container  mt-xxl-5  h-50 w-50" action="patient" method="post">
+
+ <div class=" mb-3 ">
+            <label for="name" class="form-label  ">Patient Name </label>
+            <input type="text" class="form-control" id="name" onblur="nameValidation()" name="name1">
+            <span id="errorname"></span>
+        </div> 
+        
+         <div class="mb-3">
+       <label for="date" class="form-label">Date Of Birth  </label>
+       <input type="date" class="form-control  " id="date" onblur="dateofbirthValidation()" name="dateOfBirth1">
+            <span id="errordate"></span>
+        </div> 
+        
+         <div class="mb-3">
+       <label for="email" class="form-label">Email id of The Patient</label>
+       <input type="text" class="form-control  " id="email" onblur="emailValidation()" name="email1">
+            <span id="erroremail"></span>
+        </div>  
+        
+        <div  class="mb-3">
+<label for="diseases" class="form-label">Disease Of Patient Suffering From</label>
+       <select class="form-select custom-select-width" id="diseases" onblur="diseasesValidation()" name="diseases1" aria-label="Select Color">
+  <option selected value="">---select Diseases---</option>
+   <option value="Chickenpox ">Chickenpox </option>
+  <option value="Flu ">Flu </option>
+  <option value="Heart Disease">Heart Disease</option>
+ </select>
+ <span id="diseasesError"></span><br>
+ </div>
+ 
+ <div class="mb-3">
+       <label for="hospitalNames" class="form-label">List Of Hospital To Treat the Patient</label>
+         <select class="form-select custom-select-width" id="hospitalNames" onblur="hospitalNamesValidation()" name="hospitalNames1" aria-label="Select Color">
+                <option selected value="">---Select your Hospital ---</option>
+                <option value="BGS Hospital">BGS Hospital</option>
+                <option value="Jaydeva Hospital">Jayadeva Hospital</option>
+                <option value="Aster CMI Hospital">Aster CMI Hospital</option>
+                <option value="Manipal Hospital">Manipal Hospital</option>
+            </select>
+            <span id="hospitalNamesError"></span>
+        </div>
+        
+        
+        <div>
+        <label for="radio">Gender<br>
+        <input type="radio" value="male" name="gender" id="radio"/>Male
+        <input type="radio" value="female" name="gender" id="radio"/>Female
+        <br>
+        <span id="errorgender"></span>
+        </label>
+        </div><br>
+    
+    <!-- <span  id="errorconfirmed"></span>
+  <label  for="cmf" class="list-group-item">
+    <input name="confirm"  id="cmf"    onchange="confirmValidation()"  class="form-check-input me-1" type="checkbox"  value="confirm"  >
+    Confirm
+  </label>
+  </div> -->
+ 
+ 
+		    
+        
+        <div>
+             <label for="Select Checkbox">
+            <input type="checkbox" id="cmf" onchange="confirmValidation()"/> Confirm
+            <span id="errorconfirmed"></span>
+            </label>
+         </div> 
+        
+        <div class ="mb-3 form-label">
+   <input type="submit" id="submit" disabled>
+  <!-- <button type="submit" class="btn btn-primary" id="submitButton" disabled >Submit</button> -->
+  </div>    
+       
+</div>
+
+</form>
+</body>
+</html>
