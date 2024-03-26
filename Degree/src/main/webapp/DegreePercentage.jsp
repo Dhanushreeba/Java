@@ -173,7 +173,6 @@ function collegeValidation()
 		    }
 		    
 		    validateAndEnableSubmit();
-		    genderValidation()
 		    
          } 
      	
@@ -182,14 +181,11 @@ function collegeValidation()
 </head>
 <body>
 
-<h1>can i get your degree list</h1>
-
-<nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
   <div class="container-fluid">
 
-<a class="navbar-brand" href="index.html"><button type="button" class="btn btn-light">Home</button></a>
-<a class="navbar-brand" href="index.html"><button type="button" class="btn btn-light">Back</button></a>
-
+<a class="navbar-brand" href="index.jsp"><button type="button" class="btn btn-light">Home</button></a>
+<a class="navbar-brand" href="Message.jsp"><button type="button" class="btn btn-light">Back</button></a>
 
 </div>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">

@@ -23,12 +23,22 @@ public class EducationDetails extends HttpServlet{
 	protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		System.out.println("service running in Education Details form");
 		
-		String name=req.getParameter("name");
+		String name=req.getParameter("name1");
+		String email=req.getParameter("email1");
+		String college=req.getParameter("college1");
+		String degree=req.getParameter("degree1");
+		String branch=req.getParameter("branch1");
+		String percentage=req.getParameter("percentage1");
 		System.out.println(name);
 		
 		
-		RequestDispatcher dispatcher=req.getRequestDispatcher("Message.jsp");
-		req.setAttribute("name1", name);
+		RequestDispatcher dispatcher=req.getRequestDispatcher("Result.jsp");
+		req.setAttribute("aj", name);
+		req.setAttribute("ba", email);
+		req.setAttribute("sk", college);
+		req.setAttribute("vg", degree);
+		req.setAttribute("bp", branch);
+		req.setAttribute("vm", percentage);
 		dispatcher.forward(req,resp);
 	}
 	
