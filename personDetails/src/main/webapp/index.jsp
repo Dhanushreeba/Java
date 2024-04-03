@@ -12,8 +12,8 @@
 <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
   <div class="container-fluid">
 
-<a class="navbar-brand" href="index.jsp"><button type="button" class="btn btn-light">Home</button></a>
-<a href="Market.jsp"><button type="button" class="btn btn-light">Market</button></a>
+
+<a class="navbar-brand" href="ContactDetails.jsp"><button type="button" class="btn btn-light">home</button></a>
 
 </div>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -23,14 +23,29 @@
     <div class="collapse navbar-collapse" id="navbarNav">
     </div>
 </nav>
-<div class="container">
 
-<h2 class="text-md-center w-50;">Message
 
-  <form action="read" method="post">
-  <input type="text" name="message"/>
-  <br>
+<h2 class="text-md-center w-50;">Person</h2>
+
+
+<form  class=" container  mt-xxl-5  h-50 w-50" action="click" method="post">
+
+ <div class=" mb-3 ">
+            <label for="fName" class="form-label  ">First Name </label>
+            <input type="text" class="form-control" id="fName"  name="fName1">
+    
+        </div>
+        
+        <div class=" mb-3 ">
+            <label for="lName" class="form-label  ">Last Name </label>
+            <input type="text" class="form-control" id="lName"  name="lName1">
+            
+        </div> 
+        
+  
   <input type="submit" value="send"/>
+  
   </form>
+
 </body>
 </html>

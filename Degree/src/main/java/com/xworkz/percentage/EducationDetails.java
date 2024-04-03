@@ -15,7 +15,6 @@ public class EducationDetails extends HttpServlet{
 	
 	private static final long serialVersionUID = 1L;
 	
-	
 	public EducationDetails() {
 		System.out.println("no-argu constructors running in educationDetails Servelt");
 	}

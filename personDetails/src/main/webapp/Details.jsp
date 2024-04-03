@@ -9,11 +9,12 @@
 
 </head>
 <body>
+
 <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
   <div class="container-fluid">
 
-<a class="navbar-brand" href="index.jsp"><button type="button" class="btn btn-light">Home</button></a>
-<a href="Market.jsp"><button type="button" class="btn btn-light">Market</button></a>
+<a class="navbar-brand" href="index.jsp"><button type="button" class="btn btn-light">Back</button></a>
+
 
 </div>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -23,14 +24,15 @@
     <div class="collapse navbar-collapse" id="navbarNav">
     </div>
 </nav>
-<div class="container">
 
-<h2 class="text-md-center w-50;">Message
 
-  <form action="read" method="post">
-  <input type="text" name="message"/>
-  <br>
-  <input type="submit" value="send"/>
-  </form>
+<h2>IPL Form are below:<span style="color:red">${jj}</span></h1></h2>
+
+
+<h5>First Name: <span style="color:red">${aj}</span></h5>
+<h5>Last Name:  <span style="color:red">${ba}</span></h5>
+<h5>Email:  <span style="color:red">${vm}</span></h5>
+<h5>Mobile:  <span style="color:red">${bp}</span></h5>
+
 </body>
 </html>

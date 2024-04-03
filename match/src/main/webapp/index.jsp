@@ -13,7 +13,7 @@
   <div class="container-fluid">
 
 <a class="navbar-brand" href="index.jsp"><button type="button" class="btn btn-light">Home</button></a>
-<a href="Market.jsp"><button type="button" class="btn btn-light">Market</button></a>
+<a href="IPLForm.jsp"><button type="button" class="btn btn-light">IPL</button></a>
 
 </div>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,12 +25,13 @@
 </nav>
 <div class="container">
 
-<h2 class="text-md-center w-50;">Message
+<!-- <h2 class="text-md-center w-50;">Message
 
   <form action="read" method="post">
   <input type="text" name="message"/>
   <br>
-  <input type="submit" value="send"/>
+  <input type="submit" value="send"/> -->
   </form>
+
 </body>
 </html>
