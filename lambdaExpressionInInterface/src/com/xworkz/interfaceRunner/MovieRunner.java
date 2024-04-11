@@ -9,12 +9,16 @@ public class MovieRunner {
 		Movie m=()->good()?true:false;
 		
 		System.out.println("running movie Boolean good in runner");
+		
+		return;
 	}
 
 	private static boolean good() {
 
 		System.out.println("running good");
+		
 		return true;
 	}
+
 
 }

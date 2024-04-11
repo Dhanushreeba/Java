@@ -7,16 +7,14 @@ public class ChargerRunner {
 
 	public static void main(String[] args) {
 		
-		System.out.println("Charger running in Charger Runner");
+		System.out.println("Charger running in Charger Runner having one parameter and no return type");
 
-		Charger c=(ref)->electricity();
-	
+		Charger c=(v) -> {
+			
+			System.out.println(v);
+		};
 		
-	}
-
-	private static Object electricity() {
-		// TODO Auto-generated method stub
-		return null;
+		c.electricity(50);
 	}
 
 }

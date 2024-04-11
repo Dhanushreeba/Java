@@ -10,9 +10,7 @@ public class FanRunner {
 	System.out.println("running fan in runner");
 	
 	Fan f=()->oscillate();
-	
-//	Fan f1=()->oscillate1(speed);
-		
+			
 	}
 
 	private static Object oscillate() {
