@@ -5,5 +5,6 @@ public interface MovieInterface extends Movie{
 	
 	@Override
 	public boolean good();
+		
 
 }
