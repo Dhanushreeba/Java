@@ -89,7 +89,7 @@ public class StateRunner {
 		
 		state
 		.stream()
-		.filter(s -> s.getDirection() == Direction.EAST)
+		.filter(s -> s.getDirection().equals(Direction.EAST))
 		.sorted((s1,s2)->s1.getDirection().EAST.compareTo(s2.getDirection().EAST))
 		.forEach(s->System.out.println(s));
 		
@@ -97,7 +97,7 @@ public class StateRunner {
 		
 		state
 		.stream()
-		.filter(s->s.getDirection() == Direction.WEST)
+		.filter(s->s.getDirection().equals(Direction.WEST))
 		.sorted((s1,s2)->s1.getDirection().WEST.compareTo(s2.getDirection().WEST))
 		.forEach(s->System.out.println(s));
 		
@@ -105,7 +105,7 @@ public class StateRunner {
 
 		state
 		.stream()
-		.filter(s->s.getDirection() == Direction.NORTH)
+		.filter(s->s.getDirection().equals(Direction.NORTH))
 		.sorted((s1,s2)->s1.getDirection().NORTH.compareTo(s2.getDirection().NORTH))
 		.forEach(s->System.out.println(s));
 		
@@ -113,7 +113,7 @@ public class StateRunner {
 		
 		state
 		.stream()
-		.filter(s->s.getDirection() == Direction.SOUTH)
+		.filter(s->s.getDirection().equals(Direction.SOUTH))
 		.sorted((s1,s2)->s1.getDirection().SOUTH.compareTo(s2.getDirection().SOUTH))
 		.forEach(s->System.out.println(s));
 		
@@ -177,6 +177,24 @@ public class StateRunner {
 		.forEach(s->System.out.println(s));
 		
 		System.out.println("*********get all revenue by greater than 10************");
+		
+		
+//		state
+//		.stream()
+//		.filter(s->s.getName().equals("Karnataka"))
+//		.map(name->name.getChiefMinsiter())
+//		.forEach(name->System.out.println(name));
+//
+//		System.out.println("*********getChiefMinsiter by state name ************");
+
+		
+		state
+		.stream()
+		.skip(1)
+		.findFirst()
+		.map(s->s.getName() )
+		.ifPresent(s->System.out.println("Second Maximum budget:" + s ));
+
 
 		
 	}
